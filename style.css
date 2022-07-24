@@ -1,0 +1,16 @@
+
+header{
+    height: auto;
+    background-color: rgb(10, 247, 14);
+}
+h1{
+    margin: 0px 80px;
+}
+
+.container{
+    background-color: ghostwhite;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
