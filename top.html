@@ -33,7 +33,7 @@
                             <span class = "input-group-text" >購入者</span>
                         </div>
                         <div class = "col-xs-3">
-                            <select class = "form-control">
+                            <select class = "form-control" id = "purchaser">
                                 <option>A</option>
                                 <option>B</option>
                             </select>
@@ -47,7 +47,7 @@
                             <span class = "input-group-text">購入品</span>
                         </div>
                         <div class = "col-xs-3">
-                            <input type = "text" class = "form-control"> 
+                            <input type = "text" class = "form-control" id = "goods"> 
                         </div>
                     </div>
                 </div>
@@ -74,13 +74,30 @@
             <h3>購入金額</h3>
         </div>
         <div class = "row pay-result">
-            <div class = "col pay-result" id = "left-result" >
-                <p>test</p>
+            <div class = "col pay-result row" id = "left-result" >
+                <h4>A</h4>
+                
+                <div class = "col pay-result" id = "left-result-pay" >
+                    <h6>金額</h6>
+                </div>
+                <div class = "col pay-result" id = "left-result-goods" >
+                    <h6>購入品</h6>
+                </div>
+
             </div>
+ 
+
+            <div class = "col pay-result row" id = "right-result">
+                <h4>B</h4>
+                <div class = "col pay-result" id = "right-result-pay" >
+                    <h6>金額</h6>
+                </div>
+                <div class = "col pay-result" id = "right-result-goods" >
+                    <h6>購入品</h6>
+                </div>
 
 
-            <div class = "col pay-result" id = "right-result">
-                <p>test</p>
+
             </div>
 
         </div>
