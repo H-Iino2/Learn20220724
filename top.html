@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <h1>割り勘</h1>
+        <h1>TOP</h1>
     </header>
 
     <div class = "container">
@@ -30,10 +30,10 @@
                 <div class = "input-name mb-3">
                     <div class = "input-group">
                         <div class = "input-group-prepend">
-                            <span class = "input-group-text" >購入者</span>
+                            <span class = "input-group-text" >借金した人</span>
                         </div>
                         <div class = "col-xs-3">
-                            <select class = "form-control">
+                            <select class = "form-control" id = "purchaser">
                                 <option>A</option>
                                 <option>B</option>
                             </select>
@@ -44,10 +44,10 @@
                 <div class = "input-money mb-3">
                     <div class = "input-group" >
                         <div class = "input-group-prepend">         
-                            <span class = "input-group-text">購入品</span>
+                            <span class = "input-group-text">品物</span>
                         </div>
                         <div class = "col-xs-3">
-                            <input type = "text" class = "form-control"> 
+                            <input type = "text" class = "form-control" id = "goods"> 
                         </div>
                     </div>
                 </div>
@@ -72,18 +72,48 @@
 
         <div class = "result-header mt-3 mb-3">
             <h3>購入金額</h3>
+            <h4 id = fin-pay>AがBに0円払う</h4>
         </div>
         <div class = "row pay-result">
-            <div class = "col pay-result" id = "left-result" >
-                <p>test</p>
+            <div class = "col pay-result row" id = "left-result" >
+                <h4>A</h4>
+                
+                <div class = "col pay-result" id = "left-result-pay" >
+                    <h6>金額</h6>
+                </div>
+                <div class = "col pay-result" id = "left-result-goods" >
+                    <h6>購入品</h6>
+                </div>
+
             </div>
+ 
 
+            <div class = "col pay-result row" id = "right-result">
+                <h4>B</h4>
+                <div class = "col pay-result" id = "right-result-pay" >
+                    <h6>金額</h6>
+                </div>
+                <div class = "col pay-result" id = "right-result-goods" >
+                    <h6>購入品</h6>
+                </div>
+            </div>
+        </div>
 
-            <div class = "col pay-result" id = "right-result">
-                <p>test</p>
+        <div class = "row pay-merge">
+            
+            <div class = "col left-pay-merge">
+                <h6>合計</h6>
+                <p id = "left-pay-merge"></p>
+            </div>
+            <div class = "col left-pay-merge">
+                <h6>合計</h6>
+                <p id = "right-pay-merge"></p>
             </div>
 
         </div>
+
+
+
 
 
 
