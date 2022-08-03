@@ -49,6 +49,8 @@ document.getElementById("money-button").onclick = function() {
     document.getElementById("goods").value = "";
     document.getElementById("pay").value = "";
 
+    
+
 
   }
 
