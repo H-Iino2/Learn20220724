@@ -15,20 +15,28 @@ document.getElementById("money-button").onclick = function() {
     let pay = document.getElementById("pay").value
     numPay = Number(pay);
 
-
-
-
     if (purchaser === "A"){
-      document.getElementById("left-result-goods").insertAdjacentHTML('beforeend','<p>'+goods+ '</p>');
-      document.getElementById("left-result-pay").insertAdjacentHTML('beforeend','<p>'+numPay+ '円<p>');
-      APay = APay + numPay;
-      document.getElementById("left-pay-merge").innerHTML=APay;
-    } else if(purchaser === "B"){
-      document.getElementById("right-result-goods").insertAdjacentHTML('beforeend','<p>'+goods+ '</p>');
-      document.getElementById("right-result-pay").insertAdjacentHTML('beforeend','<p>'+numPay+ '円</p>');
-      BPay = BPay + numPay;
-      document.getElementById("right-pay-merge").innerHTML=BPay;
-    } 
+      if(numPay ==""){
+        
+      }else{
+        document.getElementById("left-result-goods").insertAdjacentHTML('beforeend','<p>'+goods+ '</p>');
+        document.getElementById("left-result-pay").insertAdjacentHTML('beforeend','<p>'+numPay+ '円<p>');
+        APay = APay + numPay;
+        document.getElementById("left-pay-merge").innerHTML=APay;
+      }
+      
+    }
+
+      if(purchaser === "B"){
+        if(numPay == "B"){
+        }else{
+          document.getElementById("right-result-goods").insertAdjacentHTML('beforeend','<p>'+goods+ '</p>');
+          document.getElementById("right-result-pay").insertAdjacentHTML('beforeend','<p>'+numPay+ '円</p>');
+          BPay = BPay + numPay;
+          document.getElementById("right-pay-merge").innerHTML=BPay;
+        }
+      } 
+    
 
     if (APay > BPay){
       finPay = APay - BPay;
@@ -50,8 +58,8 @@ document.getElementById("money-button").onclick = function() {
     document.getElementById("pay").value = "";
 
     
-
+}
 //gitest2
-  }
+  
 
-
+  
